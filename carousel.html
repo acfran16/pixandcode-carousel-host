@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>@pixandcode — Trending AI Events This Week</title>
+  <meta name="hz:slide-selector" content=".slide">
+  <meta name="hz:canvas-width" content="1080">
+  <meta name="hz:canvas-height" content="1350">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -10,20 +13,14 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: #111; display: flex; flex-direction: column; gap: 4px; padding: 20px; align-items: flex-start; }
     .slide { position: relative; width: 1080px; height: 1350px; background: #0D0C0B; overflow: hidden; }
-    .bg {
-      position: absolute;
-      inset: 0;
-      background-image: url('https://photoshop-api.adobe.io/v2/short-url/urn:aaid:ps:US:647f8c5d-a72b-43c0-a9d7-6864a27986be');
-      background-size: cover;
-      background-position: center 30%;
-    }
-    .overlay { position: absolute; inset: 0; background: rgba(13,12,11,0.80); }
+    .slide-bg { position: absolute; inset: 0; background-image: url('https://raw.githubusercontent.com/acfran16/pixandcode-carousel-host/main/bg-blurred.jpg'); background-size: cover; background-position: center 30%; }
+    .slide-overlay { position: absolute; inset: 0; background: rgba(13,12,11,0.80); }
   </style>
 </head>
 <body>
 
-<div class="slide" data-document-role="page" data-label="01 — Hook">
-  <div class="bg"></div><div class="overlay"></div>
+<!-- SLIDE 1: HOOK -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350"><div class="slide-bg"></div><div class="slide-overlay"></div>
   <div style="position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;">
     <span style="font-family:Inter,sans-serif;font-weight:500;font-size:17px;color:#E8820C;letter-spacing:.1em;">01 / 07</span>
     <span style="font-family:Inter,sans-serif;font-weight:400;font-size:17px;color:#3E3C39;letter-spacing:.04em;">@pixandcode</span>
@@ -37,8 +34,8 @@
   </div>
 </div>
 
-<div class="slide" data-document-role="page" data-label="02 — Problem">
-  <div class="bg"></div><div class="overlay"></div>
+<!-- SLIDE 2: PROBLEM -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350"><div class="slide-bg"></div><div class="slide-overlay"></div>
   <div style="position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;">
     <span style="font-family:Inter,sans-serif;font-weight:500;font-size:17px;color:#E8820C;letter-spacing:.1em;">02 / 07</span>
     <span style="font-family:Inter,sans-serif;font-weight:400;font-size:17px;color:#3E3C39;letter-spacing:.04em;">@pixandcode</span>
@@ -52,8 +49,8 @@
   </div>
 </div>
 
-<div class="slide" data-document-role="page" data-label="03 — Claude">
-  <div class="bg"></div><div class="overlay"></div>
+<!-- SLIDE 3: INSIGHT - CLAUDE -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350"><div class="slide-bg"></div><div class="slide-overlay"></div>
   <div style="position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;">
     <span style="font-family:Inter,sans-serif;font-weight:500;font-size:17px;color:#E8820C;letter-spacing:.1em;">03 / 07</span>
     <span style="font-family:Inter,sans-serif;font-weight:400;font-size:17px;color:#3E3C39;letter-spacing:.04em;">@pixandcode</span>
@@ -67,8 +64,8 @@
   </div>
 </div>
 
-<div class="slide" data-document-role="page" data-label="04 — OpenAI">
-  <div class="bg"></div><div class="overlay"></div>
+<!-- SLIDE 4: INSIGHT - OPENAI -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350"><div class="slide-bg"></div><div class="slide-overlay"></div>
   <div style="position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;">
     <span style="font-family:Inter,sans-serif;font-weight:500;font-size:17px;color:#E8820C;letter-spacing:.1em;">04 / 07</span>
     <span style="font-family:Inter,sans-serif;font-weight:400;font-size:17px;color:#3E3C39;letter-spacing:.04em;">@pixandcode</span>
@@ -82,8 +79,8 @@
   </div>
 </div>
 
-<div class="slide" data-document-role="page" data-label="05 — Mistral">
-  <div class="bg"></div><div class="overlay"></div>
+<!-- SLIDE 5: INSIGHT - MISTRAL -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350"><div class="slide-bg"></div><div class="slide-overlay"></div>
   <div style="position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;">
     <span style="font-family:Inter,sans-serif;font-weight:500;font-size:17px;color:#E8820C;letter-spacing:.1em;">05 / 07</span>
     <span style="font-family:Inter,sans-serif;font-weight:400;font-size:17px;color:#3E3C39;letter-spacing:.04em;">@pixandcode</span>
@@ -97,8 +94,8 @@
   </div>
 </div>
 
-<div class="slide" data-document-role="page" data-label="06 — Proof">
-  <div class="bg"></div><div class="overlay"></div>
+<!-- SLIDE 6: PROOF -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350"><div class="slide-bg"></div><div class="slide-overlay"></div>
   <div style="position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;">
     <span style="font-family:Inter,sans-serif;font-weight:500;font-size:17px;color:#E8820C;letter-spacing:.1em;">06 / 07</span>
     <span style="font-family:Inter,sans-serif;font-weight:400;font-size:17px;color:#3E3C39;letter-spacing:.04em;">@pixandcode</span>
@@ -112,8 +109,8 @@
   </div>
 </div>
 
-<div class="slide" data-document-role="page" data-label="07 — CTA">
-  <div class="bg"></div><div class="overlay"></div>
+<!-- SLIDE 7: CTA -->
+<div class="slide" data-canvas-width="1080" data-canvas-height="1350"><div class="slide-bg"></div><div class="slide-overlay"></div>
   <div style="position:absolute;top:52px;left:60px;right:60px;display:flex;justify-content:space-between;align-items:center;">
     <span style="font-family:Inter,sans-serif;font-weight:500;font-size:17px;color:#E8820C;letter-spacing:.1em;">07 / 07</span>
     <span style="font-family:Inter,sans-serif;font-weight:400;font-size:17px;color:#3E3C39;letter-spacing:.04em;">@pixandcode</span>
